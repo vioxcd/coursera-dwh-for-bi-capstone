@@ -16,3 +16,8 @@ The workflow for ETL can be seen as a Pentaho tutorial on [SSStores Pentaho spec
 The ELT is supposed to be ETL based on the [course assignment](assets/Assignment.docx), but I modified it to be ELT. The spec can be seen in the [inventory doc](assets/InventoryDW.doc)
 
 Each project folder contain READMEs for setup and other things
+
+## Further cleaning up
+
+- Create `Makefile` for setting up and cleaning
+
