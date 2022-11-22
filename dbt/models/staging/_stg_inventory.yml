@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_inventory
+    description: "Working on ETL Assignment: Inventory Validation"
+    columns:
+      - name: BranchPlantKey
+        tests:
+          - not_null
+      - name: Date
+        tests:
+          - not_null
+      - name: ItemMasterKey
+        tests:
+          - not_null
+      - name: TransTypeKey
+        tests:
+          - not_null
+      - name: CustVendorKey
+        tests:
+          - not_null
+      - name: UnitCost
+        tests:
+          - not_null
+      - name: Currency
+        tests:
+          - not_null
+      - name: Quantity
+        tests:
+          - not_null

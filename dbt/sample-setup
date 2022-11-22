@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Change this line as your setup (similar to the ones used in dbt profile)
+DB_USER=user
+DB_PASS=pass
+DB_HOST=host
+DB_NAME=db
+SCHEMA_NAME=inventory  # don't change this line. data loading uses this name as schema name
+
+execute_psql() {
+  psql postgresql://"$DB_USER":"$DB_PASS"@"$DB_HOST":"$DB_PORT"/"$DB_NAME" "$@"
+}
+
+execute_psql -f "utils/load_data_to_db.sql"
+execute_psql -c "\copy $SCHEMA_NAME.inventory_fact_raw FROM '../data/ExcelInventory.csv' WITH (FORMAT CSV, header)"
+execute_psql -c "SELECT COUNT(1) FROM $SCHEMA_NAME.inventory_fact_raw"
+
+execute_psql -c "SET search_path = $SCHEMA_NAME" -f "../data/InventoryStarCREATEStatementPostgreSQL.sql"
+execute_psql -c "SET search_path = $SCHEMA_NAME" -f "../data/InventoryStarINSERTStatementPostgreSQL.sql"
+
