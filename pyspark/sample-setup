@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Change this line as your setup
+DB_USER=user
+DB_PASS=pass
+DB_HOST=host
+DB_NAME=db
+SCHEMA_NAME=ssstores  # don't change this line. data loading uses this name as schema name
+
+execute_psql() {
+  psql postgresql://"$DB_USER":"$DB_PASS"@"$DB_HOST":"$DB_PORT"/"$DB_NAME" "$@"
+}
+
+execute_psql -c "CREATE SCHEMA IF NOT EXISTS $SCHEMA_NAME;"
+execute_psql -c "SET search_path = $SCHEMA_NAME" -f ../data/StoreSales_PostgreSQL_CREATE.sql
+execute_psql -c "SET search_path = $SCHEMA_NAME" -f ../data/StoreSales_PostgreSQL_INSERT.sql
+execute_psql -c "SELECT COUNT(1) FROM $SCHEMA_NAME.sssales"
+
