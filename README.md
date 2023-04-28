@@ -1,23 +1,9 @@
-# ETL & (EL)T using [Coursera Assignment](https://www.coursera.org/learn/dwdesign?specialization=data-warehousing)
+# Coursera [DWH for BI Specialization](https://www.coursera.org/learn/dwdesign?specialization=data-warehousing) Assignment
 
-**Why?**
+I don't think I'll finish all the assignment, only the ones I find to be essential
 
-*"Pentaho is okay, but.." + curiosity*
-
-Two dataset are used in the project:
-
-- `ssstores` is used in ETL using pyspark
-- `inventory` is used in (EL)T using dbt
-
-The workflow for ETL can be seen as a Pentaho tutorial on [SSStores Pentaho spec](assets/SSStoresPentaho.docx) or from the picture below
-
-![Pentaho Pipeline for the ETL](assets/SSStores_Pipeline.png)
-
-The ELT is supposed to be ETL based on the [course assignment](assets/Assignment.docx), but I modified it to be ELT. The spec can be seen in the [inventory doc](assets/InventoryDW.doc)
-
-Each project folder contain READMEs for setup and other things
-
-## Further cleaning up
-
-- Create `Makefile` for setting up and cleaning
+- I skipped week 1 because it contains basic SQL stuff
+- I modified [week 2](./integrations) to a kind of ETL/ELT with pyspark and dbt (instead of pentaho)
+- I'm still working on week 3 - 5 (would probably skip week 4)
+- [Week 5](./implementation) is the culmination of all the previous week
 
