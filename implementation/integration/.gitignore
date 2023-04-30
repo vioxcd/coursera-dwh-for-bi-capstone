@@ -1,1 +1,3 @@
 sqls/insert-initial-all-tables.sql
+data/
+data.bak/
