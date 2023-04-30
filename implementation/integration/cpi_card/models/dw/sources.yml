@@ -10,3 +10,4 @@ sources:
       - name: w_job_f
       - name: w_lead_f
       - name: w_job_change_data
+      - name: w_error_log
