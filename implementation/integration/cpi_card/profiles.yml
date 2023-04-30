@@ -1,0 +1,12 @@
+cpi_card:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      threads: 12
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: coursera_dwh
+      schema: cpi_card

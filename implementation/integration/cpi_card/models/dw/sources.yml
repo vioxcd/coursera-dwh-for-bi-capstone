@@ -1,0 +1,12 @@
+
+version: 2
+
+sources:
+  - name: cpi_card
+    description: cpi_card source data
+    database: coursera_dwh
+    schema: cpi_card
+    tables:
+      - name: w_job_f
+      - name: w_lead_f
+      - name: w_job_change_data
