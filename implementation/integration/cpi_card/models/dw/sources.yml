@@ -11,3 +11,8 @@ sources:
       - name: w_lead_f
       - name: w_job_change_data
       - name: w_error_log
+      - name: w_location_d
+      - name: w_customer_d
+      - name: w_sales_agent_d
+      - name: w_sales_class_d
+      - name: w_time_d
