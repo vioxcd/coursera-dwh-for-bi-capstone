@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized='incremental'
+    )
+}}
 
 WITH
 error_rows_after_validated AS (
@@ -176,3 +181,11 @@ SELECT
   job_id,
   note
 FROM all_errors
+
+{% if is_incremental() %}
+
+WHERE change_id > (
+  SELECT MAX(change_id) FROM {{ this }}
+)
+
+{% endif %}
