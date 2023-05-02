@@ -55,7 +55,7 @@ new_records_not_exist_in_current_job_table AS (
 
 current_max_job_id AS (
   SELECT MAX(job_id) AS max_job_id
-  FROM {{ source('cpi_card', 'w_job_f') }}
+  FROM {{ this }}
 )
 
 SELECT
