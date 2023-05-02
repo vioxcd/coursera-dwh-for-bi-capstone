@@ -55,6 +55,10 @@ Step 6 and 7 are needed because `dbt` incremental model needs the table to exist
 
 ## Other Things
 
+### Pictures
+
+See [PICTURES.md](./PICTURES.md)
+
 ### Caveats
 
 - It's a bit tricky to make the assignment work for ELT case (`dbt` is an ELT tool) because it's designed for ETL workload (using `pentaho`). I still try to use `dbt` because the use-case fits nicely (e.g. transforming data that already exist in warehouse)
