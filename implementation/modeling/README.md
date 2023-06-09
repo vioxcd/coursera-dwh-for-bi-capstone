@@ -13,3 +13,13 @@ In a big picture, I include:
 
 Supporting documents can be viewed in the [docs](./docs)
 
+## Peeking at the document above
+
+### How the business process is defined:
+
+![The detailing of the business process in a table inside the document](https://github.com/vioxcd/coursera-dwh-etl-elt/assets/31486724/5cead004-b1f3-4a7d-a054-664f92674d04)
+
+### How the schema look
+
+![The dimensional model schema](https://github.com/vioxcd/coursera-dwh-etl-elt/assets/31486724/dc024684-b0f6-4604-8a64-7ffaf5f154ae)
+
