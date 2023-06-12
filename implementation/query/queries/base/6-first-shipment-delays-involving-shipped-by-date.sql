@@ -10,7 +10,7 @@
 -- This query reflects the second part, where one shipment should be done by shipped by date
 -- The second query details is in the `job` table, where the date ship by is recorded
 -- and in the `shipment` table, where actual ship date are recorded
-CREATE VIEW base_first_shipment_delays_involving_shipped_by_date
+CREATE OR REPLACE VIEW base_first_shipment_delays_involving_shipped_by_date
 AS
 SELECT
     job_id
@@ -22,7 +22,7 @@ SELECT
      ,first_shipment_date
      ,quantity_ordered
      ,total_shipped_amount
-     ,getbusdaysdiff(first_shipment_date, date_ship_by) AS busdaysdiff
+     ,getbusdaysdiff(first_shipment_date, date_ship_by) AS first_shipment_delay_days
 FROM (
     SELECT
         job_id

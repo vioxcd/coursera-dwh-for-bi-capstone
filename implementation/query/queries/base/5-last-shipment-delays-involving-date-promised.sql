@@ -10,7 +10,7 @@
 -- This query reflects the first part, where all shipment should be done by date promised
 -- The first query details is in the `job` table, where the date promised is recorded
 -- and in the `shipment` table, where actual ship date are recorded
-CREATE VIEW base_last_shipment_delays_involving_date_promised
+CREATE OR REPLACE VIEW base_last_shipment_delays_involving_date_promised
 AS
 SELECT
     job_id
@@ -21,8 +21,8 @@ SELECT
      ,date_promised
      ,last_shipment_date
      ,quantity_ordered
-     ,total_shipped_amount
-     ,getbusdaysdiff(last_shipment_date, date_promised) AS busdaysdiff
+     ,total_shipped_amount as total_delayed_ship_amount
+     ,getbusdaysdiff(last_shipment_date, date_promised) AS last_shipment_delay_days
 FROM (
 	-- determine last shipment date
     SELECT
