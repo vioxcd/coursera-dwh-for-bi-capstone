@@ -2,6 +2,8 @@
 
 Features the CPI Card dashboard for the specializations capstone and more notes about exercises from the materials (in case I ever feel like trying more dashboards)
 
+Click [here](https://lookerstudio.google.com/s/sMehk36GvWE) to see the dashboard
+
 ## Workflow
 
 1. Looking at the dashboard and questions, thinking whether it can be answered by using the data
