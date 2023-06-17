@@ -1,17 +1,65 @@
 # Dashboarding with Looker Studio
 
-Features reproduced exercises from the materials and the CPI Card dashboard capstone
+Features the CPI Card dashboard for the specializations capstone and more notes about exercises from the materials (in case I ever feel like trying more dashboards)
+
+## Workflow
+
+1. Looking at the dashboard and questions, thinking whether it can be answered by using the data
+2. Creating a query that would generate the data for the visualizations  
+  From this I learned that there are two types of data that can be processed by Looker: pre-aggregated and usual table forms. I decided to went with the first way, as initially I used the second way and experienced a bit of lag
+3. Uploading the data to Google Cloud Storage (with `gsutil`)
+4. Importing the data to Looker via GCS connector
+5. Creating the visualization for the data
+6. Step 2 to 5 is iterative, as I tried to make the dimension looks correct and resembles the examples, and could answer the questions given
 
 ## Capstone
 
-- Dump data from postgres to parquet
-- Put it in GCS
-- Load it in BQ (there's [free 10 GB][bq-storage-pricing] of storage per month)
-- Visualize it in Looker (?)
+### Dashboard 1: Job and Shipment Trends
 
-I wonder if it needs to be processed first...
+![Dashboard 1: Job and Shipment Trends](https://github.com/vioxcd/coursera-dwh-for-bi-capstone/assets/31486724/c9cd087d-0c98-4324-b22f-adfdb6d51d5f)
 
-## Exercises
+#### Questions
+
+1. How much revenue does a company generate from its job bookings?  
+   This question can be answered by looking at the `grand total` rows (bottom) in the *lead generation by location and agent* table
+
+2. How many jobs does each sales agent book?  
+   This question can be answered by looking at the `jobs booked` column in the *lead generation by location and agent* table
+
+3. How many jobs have not yet shipped or have only partially shipped?  
+   This question can't be answered by using the data, but the *late shipments* table can be used to refer to shipment-related late days
+
+### Dashboard 2: Invoice Trends
+
+![Dashboard 2: Invoice Trends](https://github.com/vioxcd/coursera-dwh-for-bi-capstone/assets/31486724/0d4e797f-dc4c-4217-bef3-37b260276230)
+
+#### Questions
+
+1. Which sales class generate the highest invoice amounts?  
+   This question can be answered by looking at the `invoice amount` in the *total invoiced amount by sales class* table
+
+2. How many invoices are generated for a time period?  
+   This question can be answered by changing the `date input format` at the top left corner and seeing the *total invoice scorecard* changes
+
+3. What is the total amount invoiced for a time period?  
+   This question can be answered by changing the `date input format` at the top left corner and seeing the *total invoice amount scorecard* changes
+
+### Dashboard 3: Financial Performance
+
+![Dashboard 3: Financial Performance](https://github.com/vioxcd/coursera-dwh-for-bi-capstone/assets/31486724/7c2c31f6-9c60-4324-924e-e474f54f5008)
+
+#### Questions
+
+1. Determine the location and the machine which have the highest overall machine
+and labor cost. Also determine which location has the lowest budget overhead cost.  
+Highest machine and labor cost means it's on the upper-right hand-side of the top chart. Hovering on that point reveals the `location name` dimension that can be looked at. Answer: *Los Angeles*  
+Lowest budget overhead is indicated by the color of blue (category 6) in the bottom-left hand-side. Answer: *Vancouver*
+
+2. Which location is seen to have higher forecast amount in comparison to the actual amount on the basis of time period?  
+   Forecast is made on year-on-year basis, so it's only right to group them by years. Looking at the bottom graph, there's an input field for `location name` where user can select an option among 12 locations available. After selected, the graph would change to reflect the data for the current location selected.  
+   Looking at the graph for each locations to answer the question, **all locations have higher forecast amount in comparison to the actual amount in all time periods**
+
+## More Exercises
 
 As the dataset for the exercises are scattered all around, I've spend extra effort to get them all. Here's some notes about the ones I could find
 
