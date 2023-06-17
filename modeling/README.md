@@ -1,6 +1,6 @@
 # Data Warehouse Modeling Assignment
 
-Most of the work can be found in the [assignment pdf](./Data Warehouse Design Assignment.pdf)
+Most of the work can be found in the [assignment pdf](./Data%20Warehouse%20Design%20Assignment.pdf)
 
 In a big picture, I include:
 
