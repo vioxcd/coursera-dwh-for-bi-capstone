@@ -92,6 +92,8 @@ As the dataset for the exercises are scattered all around, I've spend extra effo
 
 - [TalkingData Mobile User Demographics][kaggle-dataset-mobile]. I can't seem to find the kind of dataset used in the module, so I'll just make up my own analysis for it. This dataset differs by a large stretch, though. It's used for a classification competition. I wonder if I could do EDA on this?
 
+Update: I think the analysis uses data from Google Analytics. Looker studio has [a template dashboard][ga-template-dashboard] for it. Here's the dataset that I could find, one from [Kaggle][kaggle-dataset-ga] sampled from BQ, and the other from [Google Cloud public dataset][gcp-public-ga-dataset] (the ones in BQ)
+
 ### Exercise 5: Restaurant Performance Analysis
 
 Can't find the restaurant dataset that has revenue in them. Bummer.
@@ -100,7 +102,6 @@ As an alternative, maybe I can try to do the [Super Store analysis][katie-super-
 
 [//]: # (Links)
 
-[bq-storage-pricing]: https://cloud.google.com/bigquery/pricing#storage
 [kaggle-dataset-countries]: https://www.kaggle.com/datasets/fernandol/countries-of-the-world
 [kaggle-dataset-fertility-and-life-expentancy]: https://www.kaggle.com/datasets/gemartin/world-bank-data-1960-to-2016
 [kaggle-dataset-flight-delays]: https://www.kaggle.com/datasets/usdot/flight-delays
@@ -113,3 +114,6 @@ As an alternative, maybe I can try to do the [Super Store analysis][katie-super-
 [kaggle-dataset-super-store]: https://www.kaggle.com/datasets/akashkothare/tsf-datasets?select=SampleSuperstore.csv
 [stratascratch-terrorism-hotspot]: https://platform.stratascratch.com/data-projects/terrorism-hotspots
 [maven-unicorn-challenge]: https://www.mavenanalytics.io/blog/maven-unicorn-challenge
+[ga-template-dashboard]: https://lookerstudio.google.com/u/0/navigation/templates
+[kaggle-dataset-ga]: https://www.kaggle.com/datasets/bigquery/google-analytics-sample
+[gcp-public-ga-dataset]: https://console.cloud.google.com/marketplace/product/obfuscated-ga360-data/obfuscated-ga360-data?project=lexical-script-761
