@@ -1,0 +1,97 @@
+location_id,location_name,time_year,label,amount
+1,New York,2012,sales,701686232
+1,New York,2012,forecast,1821749743
+1,New York,2013,sales,1629268171
+1,New York,2013,forecast,3061345536
+1,New York,2014,sales,1546348596
+1,New York,2014,forecast,2900315196
+1,New York,2015,sales,554946741
+1,New York,2015,forecast,731354328
+2,Atlanta,2012,sales,705937341
+2,Atlanta,2012,forecast,1733818570
+2,Atlanta,2013,sales,1522807966
+2,Atlanta,2013,forecast,2852226060
+2,Atlanta,2014,sales,1593723062
+2,Atlanta,2014,forecast,2915179332
+2,Atlanta,2015,sales,449527874
+2,Atlanta,2015,forecast,566320360
+3,Chicago,2012,sales,693310395
+3,Chicago,2012,forecast,1784180002
+3,Chicago,2013,sales,1576439150
+3,Chicago,2013,forecast,3015841152
+3,Chicago,2014,sales,1437300657
+3,Chicago,2014,forecast,2884673328
+3,Chicago,2015,sales,488294577
+3,Chicago,2015,forecast,644472216
+4,Dallas,2012,sales,636506622
+4,Dallas,2012,forecast,1548951965
+4,Dallas,2013,sales,1485983182
+4,Dallas,2013,forecast,2673407784
+4,Dallas,2014,sales,1706227655
+4,Dallas,2014,forecast,3039771576
+4,Dallas,2015,sales,589831988
+4,Dallas,2015,forecast,716993544
+5,Denver,2012,sales,623207770
+5,Denver,2012,forecast,1623081031
+5,Denver,2013,sales,1522364743
+5,Denver,2013,forecast,2850285156
+5,Denver,2014,sales,1511382746
+5,Denver,2014,forecast,2920380900
+5,Denver,2015,sales,412586845
+5,Denver,2015,forecast,550043240
+6,Los Angeles,2012,sales,716439443
+6,Los Angeles,2012,forecast,1776271640
+6,Los Angeles,2013,sales,1518421313
+6,Los Angeles,2013,forecast,2871778692
+6,Los Angeles,2014,sales,1506942067
+6,Los Angeles,2014,forecast,2902794432
+6,Los Angeles,2015,sales,525616309
+6,Los Angeles,2015,forecast,706262032
+7,Seattle,2012,sales,677947335
+7,Seattle,2012,forecast,1568693049
+7,Seattle,2013,sales,1594175001
+7,Seattle,2013,forecast,2739188220
+7,Seattle,2014,sales,1521869238
+7,Seattle,2014,forecast,2749839936
+7,Seattle,2015,sales,602865394
+7,Seattle,2015,forecast,782594096
+8,Toronto,2012,sales,714930095
+8,Toronto,2012,forecast,1860089264
+8,Toronto,2013,sales,1342044785
+8,Toronto,2013,forecast,2635898340
+8,Toronto,2014,sales,1598301324
+8,Toronto,2014,forecast,3062329404
+8,Toronto,2015,sales,523321824
+8,Toronto,2015,forecast,699742848
+9,Montreal,2012,sales,758541658
+9,Montreal,2012,forecast,1774554727
+9,Montreal,2013,sales,1560181660
+9,Montreal,2013,forecast,2673257292
+9,Montreal,2014,sales,1588885209
+9,Montreal,2014,forecast,2791488276
+9,Montreal,2015,sales,496209774
+9,Montreal,2015,forecast,630082104
+10,Vancouver,2012,sales,789347414
+10,Vancouver,2012,forecast,2031510206
+10,Vancouver,2013,sales,1565744237
+10,Vancouver,2013,forecast,2859885948
+10,Vancouver,2014,sales,1329917174
+10,Vancouver,2014,forecast,2641119936
+10,Vancouver,2015,sales,446218304
+10,Vancouver,2015,forecast,616492424
+11,London,2012,sales,758254539
+11,London,2012,forecast,1839234419
+11,London,2013,sales,1312781261
+11,London,2013,forecast,2643041088
+11,London,2014,sales,1373286791
+11,London,2014,forecast,2598663096
+11,London,2015,sales,589289984
+11,London,2015,forecast,786184032
+12,Birmingham,2012,sales,638915450
+12,Birmingham,2012,forecast,1524633880
+12,Birmingham,2013,sales,1416887480
+12,Birmingham,2013,forecast,2603275656
+12,Birmingham,2014,sales,1652239173
+12,Birmingham,2014,forecast,3010849632
+12,Birmingham,2015,sales,536795836
+12,Birmingham,2015,forecast,666840696
